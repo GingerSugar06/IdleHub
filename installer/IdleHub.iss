@@ -1,15 +1,15 @@
-﻿; Steam Idle Manager — Windows kurulum sihirbazı (Inno Setup 6)
+﻿; Idle Hub — Windows kurulum sihirbazı (Inno Setup 6)
 ; Derleme: tool\make_installer.ps1  (ISCC'yi kendisi çağırır)
 
-#define MyAppName "Steam Idle Manager"
-#define MyAppExe "steam_idle_manager.exe"
+#define MyAppName "Idle Hub"
+#define MyAppExe "idle_hub.exe"
 #define MyAppVersion "2.0.0"
 #ifndef SourceDir
   #define SourceDir "..\build\windows\x64\runner\Release"
 #endif
 
 [Setup]
-AppId={{AB2DEA02-E56D-5673-9BE8-4792B0027C6E}
+AppId={{CDAF5265-EE08-5A82-818A-7AE002291865}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
@@ -17,7 +17,7 @@ DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 OutputDir=Output
-OutputBaseFilename=SteamIdleManager-Setup-{#MyAppVersion}
+OutputBaseFilename=IdleHub-Setup-{#MyAppVersion}
 SetupIconFile=..\windows\runner\resources\app_icon.ico
 UninstallDisplayIcon={app}\{#MyAppExe}
 WizardStyle=modern

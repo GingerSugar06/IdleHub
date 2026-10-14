@@ -148,7 +148,7 @@ class Store {
     } catch (_) {
       // Bozuk dosya: yedeğe al, temiz başla.
       try {
-        await _file.rename('${_file.path}.bozuk');
+        await _file.rename('${_file.path}.corrupt');
       } catch (_) {}
     }
     return st;
